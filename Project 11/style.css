@@ -3,9 +3,6 @@
     padding: 0;
     box-sizing:border-box;
 }
-body{
-    overflow: hidden;
-}
 .container{
     height: 100vh;
     width: 100vw;
@@ -13,6 +10,7 @@ body{
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(150deg,rgb(108, 106, 106),black);
+    overflow: hidden;
 }
 .main{
     border: 2px solid rgb(233, 20, 20);
@@ -20,7 +18,7 @@ body{
     background-image: linear-gradient(150deg,rgb(228, 161, 61),rgb(200, 107, 218));
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    padding: 10px;
     height: 90vh;
     max-width: 550px;
     justify-content:space-evenly;
@@ -59,7 +57,9 @@ button{
     overflow: auto;
 
 }
+#reset{
+    display: none;
+}
 #result li{
     list-style: none;
-    
 }

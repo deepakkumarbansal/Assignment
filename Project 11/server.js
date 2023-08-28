@@ -1,45 +1,41 @@
-let form = document.getElementById("form");
-form.addEventListener("submit",submitForm);
-
-function submitForm(event){
-    event.preventDefault();
-    let givenString = document.getElementById("input").value;
-    document.getElementById("input").value = "" // Nothing will be display on textArea after submit
-    let Btn = document.getElementById("submit")
-    Btn.innerText = "Clear Result"
-    function count(givenString){
-        let array = [...givenString]; // array make but repeated values included
-        let myMap = new Map();
-        array.forEach((arrayItem)=>{
-            if(myMap.has(arrayItem)){
-            let x = myMap.get(arrayItem);
-            x++;
-            myMap.set(arrayItem,x);
-            }
-            else{
-            myMap.set(arrayItem,1);
-            }
-        });
-        return myMap
-    }
-    
-    let myMap = count(givenString);
-    console.log(myMap);
-    displayArea = document.getElementById("result");
-    [...myMap].forEach((item)=>{
-        list = document.createElement("li");
-        if(item[0] == " "){
-            item[0] = "'space'";
+let Submitbtn = document.getElementById("submit");
+let resetBtn = document.getElementById("reset")
+let resultArea = document.getElementById("result");
+let textArea = document.getElementById("input");
+Submitbtn.addEventListener("click", displayResult);
+function displayResult(){
+    Submitbtn.style.display = "none";
+    resetBtn.style.display = "block";
+    let inputStringValue = textArea.value;
+    let myMap = new Map();
+    [...inputStringValue].forEach((item)=>{
+        if(myMap.has(item)){
+            value = myMap.get(item);
+            myMap.set(item, ++value);
         }
-        list.textContent = item[0] + " : " + item[1];
-        displayArea.appendChild(list);
-    })
-    // let lists = document.querySelectorAll("li");
-    Btn.addEventListener("click",()=>{
-        // lists.forEach((list)=>displayArea.removeChild(list));
-        displayArea.innerHTML = ""
+        else{
+            myMap.set(item,1);
+        }
+    });
+    let resultHeading = document.createElement("p");
+    resultHeading.style.fontWeight = 800;
+    resultHeading.style.textDecoration = "underline";
+    resultHeading.innerText = "Result:";
+    resultArea.appendChild(resultHeading);
+    [...myMap].forEach(element =>{
+        let list = document.createElement("li");
+        if(element[0] == " "){
+            element[0] = "' '";
+        }
+        list.textContent = element[0] + " : " + element[1];
+        resultArea.appendChild(list);
     })
 }
 
-
-
+resetBtn.addEventListener("click",clearResult);
+function clearResult(){
+    textArea.value = "";
+    resultArea.innerHTML = "";
+    resetBtn.style.display = "none";
+    Submitbtn.style.display = "block";
+}
