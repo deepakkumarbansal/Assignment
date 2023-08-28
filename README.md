@@ -38,3 +38,6 @@ Real estate company page: https://deepakkumarbansal.github.io/Assignment/Project
 Project 10:
 
 medifine doctor page: https://deepakkumarbansal.github.io/Assignment/Project%2010/
+
+Project 11:
+Unique character counter: https://deepakkumarbansal.github.io/Assignment/Project%2011
