@@ -1,0 +1,125 @@
+*{
+    margin-right:  5px;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color:#edf1fd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items:; */
+    
+}
+li{
+    list-style: none;
+    cursor:pointer;
+}
+li>a{
+    text-decoration:none;
+    color: black;
+}
+button,[type="button"]{
+    background-color:rgb(18, 155, 155);
+    padding: 4px 10px;
+    cursor:pointer;
+    color:#fff;
+    border:1px solid white;
+    border-radius: 5px;
+    font-weight: 600;
+    width: fit-content;
+}
+button:hover,[type="button"]:hover{
+    border:1px solid black;
+    background-color: #fff;
+    color:black
+}
+nav{
+    /* border: 1px solid black; */
+    display:flex;
+    width: 100%;
+    align-items:center;
+    justify-content: space-between;
+}
+.logo>img{
+    height: 100px;
+    width: 150px;
+    border:1px solid black;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap:25px;
+    font-weight: 500;
+}
+nav ul li:hover{
+    text-decoration: underline;
+    font-weight: 900;
+}
+.search-feild{
+    display:flex;
+    gap:30px;
+}
+[type="text"]{
+    padding: 4px 10px;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+main div h1{
+    font-size:40px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+main div span{
+    color: rgb(18, 155, 155);
+    font-weight: 900;
+    
+}
+main div p{
+    font-weight:500;
+}
+.main-right{
+    /* border:2px solid black; */
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(25deg, blue, purple,rgb(231, 32, 65),red);
+    /* width:40%; */
+    align-items: center;
+    justify-content:center;
+    border-radius: 6px;
+
+}
+.main-right img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+.main-right button{
+    align-self: center;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+
+}
+footer ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+footer p{
+    font-weight: 700;
+}
+footer ul li a i:hover{
+    border:1px solid black;
+    border-radius: 5px;
+}

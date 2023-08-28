@@ -1,0 +1,107 @@
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f0f4f5;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    margin: 30px auto;
+    align-items: center;
+}
+header nav ul{
+    display: flex;
+    gap: 25px;
+
+}
+nav li:first-child{
+    font-weight: 600;
+    color: #20bc7e;
+}
+li{
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+header nav img{
+    width: 120px;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+main .left{
+    margin-left: 10vw;
+    width: 50vw;
+
+}
+/* main .right img{
+    width: 400px;
+} */
+main .right img:first-child{
+    position:absolute;
+    top: 260px;
+    right: 16px;
+    width: 450px;
+
+}
+main .right img:nth-child(2){
+    z-index: -1;
+    position: absolute;
+    top: 310px;
+    right:10px;
+    width: 430px;
+}
+main .right  img:nth-child(3){
+    position: absolute;
+    top: 65px;
+    right: 0px;
+    width: 500px;
+}
+button{
+    background-color: #22bc7e;
+    padding: 10px 30px;
+    border: none;
+    font-weight: 700;
+    color: white;
+    border-radius: 25px;
+}
+main h1{
+    font-size: 60px;
+}
+main p{
+    color: rgb(98, 95, 95);
+    margin: 15px 0;
+}
+[alt="stethoscope"]{
+    position: absolute;
+    width: 450px;
+    top: 228px;
+    left: 349px;
+    z-index: -5;
+}
+[alt="bottomAngle"]{
+    position: relative;
+    left: 320px;
+    top: 0px;
+}
+[alt="mouse"]{
+    position: relative;
+    top: 26px;
+    left: 330px;
+    width: 25px;
+}

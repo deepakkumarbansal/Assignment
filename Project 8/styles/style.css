@@ -1,0 +1,251 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0f0f10;
+    max-width: 100vw;
+    height: 100vh;
+    color: white;
+    margin: 0 15vw;
+}
+header{
+    display: flex;
+    max-width: 100vw;
+    justify-content: space-between;
+    margin: 1vw auto 100px;
+}
+.left-header{
+    width: 25px;
+    text-align: end;
+}
+header nav{
+    display: flex;
+    align-items: center;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+
+}
+ul>li{
+    list-style: none;
+    margin-right: 20px;
+}
+[alt="mainImage"]{
+    position: relative;
+    top:-250px;
+    left: 100px;
+    width: 230px;;
+}
+main{
+    display: flex;
+    position: relative;
+    align-items: start;
+    margin-bottom: 100px;
+}
+.main{
+   margin-left: 180px;
+    max-width:40vw;
+}
+[alt="on-ear"]{
+    width: 350px;
+    margin:40px 0 0 40px;
+}
+.main h5{
+    margin: 40px 0;
+    font-size: 15px;
+}
+.main-button{
+    background-color: #1e1e21;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    border-radius: 5px;
+    padding: 15px;
+    color: white;
+    border: none;
+}
+.main-button h4{
+    margin: 0 20px;
+}
+.main-button h4 span{
+    font-size: larger;
+    font-weight: 900;
+    margin-left: 20px;
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+    max-width: 100vw;
+    gap: 100px;
+    margin: 100px auto;
+}
+.specs{
+    display: flex;
+    max-width: 70vw;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+}
+.specsin{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px auto;
+}
+.left-specs div:first-child, .left-specs div:last-child{
+    margin-left: 30px;
+}
+.left-specs div{
+    margin: 20px 0;
+}
+.case{
+    display: flex;
+    max-width: 70vw;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+}
+[alt="caselogo"]{
+    margin: 100px;
+}
+.casein{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.more-info{
+    border-radius: 5px;
+    display: flex;
+    padding: 10px;
+    background-color: #1e1e21;
+    margin: 20px 0;
+}
+.more-info img{
+    margin-right:20px; 
+}
+.buy{
+    background-color: #181a1b;
+    max-width: 60vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:30px 0;
+    border-radius: 10px;
+    margin: 100px 0;
+}
+.buybutton2{
+    display: flex;
+    border-radius: 5px;
+    background-color:#000000;
+    padding: 10px;
+    width: fit-content;
+    justify-content: space-between;
+    gap: 10px;
+}
+.left-buy p{
+    margin: 20px 0;
+}
+.choose{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0;
+}
+[alt="headphone"]{
+    width: 75px;
+}
+.style{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 30vw;
+    justify-content: space-around;
+    gap: 20px;
+}
+.style div div{
+    background-color: #181a1b;
+    height: 120px;
+    width: 120px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 15px;
+
+}
+[alt="headphone"]{
+    position: relative;
+    top: 70px;
+    left: 25px;
+    
+}
+.footer{
+    display: flex;
+    max-width: 100vw;
+    justify-content: space-between;
+    margin: 100px 0;
+}
+footer li{
+    list-style: none;
+}
+.connect>div{
+    display: flex;
+    align-items: center;
+}
+input{
+    height: 60px;
+    border-radius: 10px;
+    width: 30vw;
+    background-color: #181a1b;
+    border: none;
+    padding: 10px;
+}
+.button{
+    border: none;
+    position: relative;
+    top: 0;
+    left: -158px;
+    border-radius: 10px;
+    background-color: #000000;
+    color: white;
+    width: fit-content;
+    display: flex;
+    padding: 12px;
+    justify-content: space-between;
+    gap: 0 10px;
+}
+.footer> img{
+    height: 35px;
+    width: 35px;
+}
+.si{
+    display: flex;
+    width: 30vw;
+    /* justify-content: space-between; */
+    margin-top: 25px;
+}
+[alt="upArrow"]{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    scale: 1;
+}
+.right-header button{
+    background-color: #1e1e21;
+    color: white;
+    padding: 8px 30px;
+    border-radius: 7.5px;
+
+}
+button:hover{
+    cursor: pointer;
+}
+img{
+    cursor: pointer;
+}
