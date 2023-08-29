@@ -41,4 +41,8 @@ medifine doctor page: https://deepakkumarbansal.github.io/Assignment/Project%201
 
 Project 11:
 
-Unique character counter: https://deepakkumarbansal.github.io/Assignment/Project%2011
+Unique character counter: https://deepakkumarbansal.github.io/Assignment/Project%2011/
+
+Project 12:
+
+Unique digit counter: https://deepakkumarbansal.github.io/Assignment/Project%2012/
